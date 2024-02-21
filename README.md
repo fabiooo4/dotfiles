@@ -33,6 +33,12 @@ sudo apt install stow
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 ```
 
+### Starship
+
+```
+curl -sS https://starship.rs/install.sh | sh
+```
+
 </details>
 
 <details>
@@ -60,6 +66,12 @@ sudo dnf install stow
 
 ```
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+```
+
+### Starship
+
+```
+curl -sS https://starship.rs/install.sh | sh
 ```
 
 </details>
