@@ -1,8 +1,8 @@
 # exa
-alias l="exa --icons --group-directories-first -l"
-alias ll="exa --icons --group-directories-first -la"
-alias ls="exa"
-alias tree="exa --tree"
+alias l="eza --icons --group-directories-first -l"
+alias ll="eza --icons --group-directories-first -la"
+alias ls="eza"
+alias tree="eza --tree"
 
 # git
 alias gad="git add ."
