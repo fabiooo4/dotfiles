@@ -12,7 +12,7 @@ Ensure you have the following installed on your system
 ### Zsh
 
 ```
-sudo apt install zsh && echo "ZDOTDIR=~/.config/zsh" | sudo tee -a /etc/zsh/zshenv
+sudo apt install zsh && echo "ZDOTDIR=~/.config/zsh"
 ```
 
 ### Git
@@ -47,7 +47,7 @@ curl -sS https://starship.rs/install.sh | sh
 ### zsh
 
 ```
-sudo dnf install zsh && echo "ZDOTDIR=~/.config/zsh" | sudo tee -a /etc/zsh/zshenv
+sudo dnf install zsh && echo "ZDOTDIR=~/.config/zsh"
 ```
 
 ### Git
@@ -81,12 +81,18 @@ curl -sS https://starship.rs/install.sh | sh
 First, clone the dotfiles repo in your $HOME directory using git
 
 ```
-$ git clone https://github.com/fabiooo4/dotfiles
-$ cd dotfiles
+git clone https://github.com/fabiooo4/dotfiles
+cd dotfiles
 ```
 
 then use GNU stow to create symlinks
 
 ```
-$ stow .
+stow .
+```
+
+or if there are already some configs use the following to overwrite them
+
+```
+stow --adopt .
 ```
