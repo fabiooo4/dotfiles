@@ -1,5 +1,5 @@
 # Zsh home
-export ZSH=$HOME/.config/zsh
+export ZSH=$HOME/.zsh
 
 # Remove paste highlight
 zle_highlight=('paste:none')
