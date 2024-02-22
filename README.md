@@ -91,8 +91,14 @@ then use GNU stow to create symlinks
 stow .
 ```
 
-or if there are already some configs use the following to overwrite them
+or if there are already some configs use the following to overwrite them.
 
 ```
 stow --adopt .
+```
+
+Finally set zsh as default shell
+
+```
+chsh -s $(which zsh)
 ```
