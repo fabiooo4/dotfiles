@@ -4,7 +4,13 @@ This repo contains the dotfiles for my system
 
 ## Requirements
 
-Install all the dependencies by running `install.sh` or manually using the following commands:
+Install all the dependencies by running:
+
+```
+sudo ./install.sh
+```
+
+or manually using the following commands:
 
 <details>
 <summary>Ubuntu</summary>
