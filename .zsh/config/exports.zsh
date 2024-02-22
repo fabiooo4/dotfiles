@@ -11,6 +11,7 @@ export MANWIDTH=999
 # Path
 export PATH="$HOME/bin":$PATH
 export PATH="$HOME/.local/bin":$PATH
+export PATH="/root/.local/bin":$PATH
 . "$HOME/.cargo/env"
 
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative

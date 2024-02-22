@@ -1,8 +1,15 @@
 #!/bin/bash
 set -eu
 
+source /etc/os-release
+
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit 1
+fi
+
 # check if on ubuntu or fedora
-if [ -f /etc/debian_version ]; then
+if  echo $PRETTY_NAME | grep -q Ubuntu; then
     echo "Installing dependencies for Ubuntu"
     # if not installed, install curl
     sudo apt update
@@ -12,8 +19,8 @@ if [ -f /etc/debian_version ]; then
     fi
 
     # if not installed, install rust
-    if ! [ -x "$(command -v rustc >/dev/null 2>&1)" ]; then
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    if ! command -v cargo &> /dev/null; then
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
     fi
 
     # if not installed, install git
@@ -32,12 +39,12 @@ if [ -f /etc/debian_version ]; then
     fi
 
     # if not installed, install starship
-    if ! [ -x "$(command -v starship >/dev/null 2>&1)" ]; then
-        curl -sS https://starship.rs/install.sh | sh
+    if ! command -v starship &> /dev/null; then
+        curl -sS https://starship.rs/install.sh | sh -s -- -y
     fi
 
     # if not installed, install zoxide
-    if ! [ -x "$(command -v zoxide >/dev/null 2>&1)" ]; then
+    if ! command -v zoxide &> /dev/null; then
         curl -sS https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | bash
     fi
 
@@ -47,12 +54,13 @@ if [ -f /etc/debian_version ]; then
     fi
 
     # if not installed, install eza
-    if ! [ -x "$(command -v eza >/dev/null 2>&1)" ]; then
+    if ! command -v eza &> /dev/null; then
+        source "$HOME/.cargo/env"
         cargo install eza
     fi
 
 
-elif [ -f /etc/redhat-release ]; then
+elif echo $PRETTY_NAME | grep -q Fedora; then
     echo "Installing dependencies for Fedora"
     # if not installed, install curl
     if ! rpm -q curl; then
@@ -60,8 +68,8 @@ elif [ -f /etc/redhat-release ]; then
     fi
 
     # if not installed, install rust
-    if ! [ -x "$(command -v rustc >/dev/null 2>&1)" ]; then
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    if ! command -v cargo &> /dev/null; then
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
     fi
 
     # if not installed, install git
@@ -80,7 +88,7 @@ elif [ -f /etc/redhat-release ]; then
     fi
 
     # if not installed, install starship
-    if ! [ -x "$(command -v starship >/dev/null 2>&1)" ]; then
+    if ! command -v starship &> /dev/null; then
         curl -sS https://starship.rs/install.sh | sh
     fi
 
