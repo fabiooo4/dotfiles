@@ -10,77 +10,18 @@ Install all the dependencies by running:
 sudo ./install.sh
 ```
 
-or manually using the following commands:
+or manually ensure you have installed all the following dependencies:
 
-<details>
-<summary>Ubuntu</summary>
-
-### Zsh
-
-```
-sudo apt install zsh
-```
-
-### Git
-
-```
-sudo apt install git
-```
-
-### Stow
-
-```
-sudo apt install stow
-```
-
-### Zplug
-
-```
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-```
-
-### Starship
-
-```
-curl -sS https://starship.rs/install.sh | sh
-```
-
-</details>
-
-<details>
-<summary>Fedora</summary>
-
-### zsh
-
-```
-sudo dnf install zsh
-```
-
-### Git
-
-```
-sudo dnf install git
-```
-
-### Stow
-
-```
-sudo dnf install stow
-```
-
-### Zplug
-
-```
-curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
-```
-
-### Starship
-
-```
-curl -sS https://starship.rs/install.sh | sh
-```
-
-</details>
+- `curl`
+- `rust`
+- `git`
+- `stow`
+- `zplug`
+- `starship`
+- `zoxide`
+- `fzf`
+- `eza`
+- `packer`
 
 ## Installation
 

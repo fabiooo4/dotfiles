@@ -59,6 +59,12 @@ if  echo $PRETTY_NAME | grep -q Ubuntu; then
         cargo install eza
     fi
 
+    # if not installed, install packer
+    if [ ! -d ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
+        git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+         ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+    fi
+
 
 elif echo $PRETTY_NAME | grep -q Fedora; then
     echo "Installing dependencies for Fedora"
@@ -105,6 +111,12 @@ elif echo $PRETTY_NAME | grep -q Fedora; then
     # if not installed, install exa
     if ! rpm -qa eza; then
         sudo dnf install -y eza
+    fi
+
+    # if not installed, install packer
+    if [ ! -d ~/.local/share/nvim/site/pack/packer/start/packer.nvim ]; then
+        git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+         ~/.local/share/nvim/site/pack/packer/start/packer.nvim
     fi
 
 else
