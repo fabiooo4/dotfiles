@@ -4,7 +4,7 @@ This repo contains the dotfiles for my system
 
 ## Requirements
 
-Ensure you have the following installed on your system
+Install all the dependencies by running `install.sh` or manually using the following commands:
 
 <details>
 <summary>Ubuntu</summary>
@@ -12,7 +12,7 @@ Ensure you have the following installed on your system
 ### Zsh
 
 ```
-sudo apt install zsh && echo "ZDOTDIR=~/.config/zsh"
+sudo apt install zsh
 ```
 
 ### Git
@@ -47,7 +47,7 @@ curl -sS https://starship.rs/install.sh | sh
 ### zsh
 
 ```
-sudo dnf install zsh && echo "ZDOTDIR=~/.config/zsh"
+sudo dnf install zsh
 ```
 
 ### Git
@@ -91,11 +91,13 @@ then use GNU stow to create symlinks
 stow .
 ```
 
-or if there are already some configs use the following to overwrite them.
+or if there are already some configs use the following to use them.
 
 ```
 stow --adopt .
 ```
+
+#### Note that this command overwrites the files in the repo, so be sure to check if the files you adopted match the files in the repo
 
 Finally set zsh as default shell
 
