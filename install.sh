@@ -63,7 +63,7 @@ if  echo $PRETTY_NAME | grep -q Ubuntu; then
 elif echo $PRETTY_NAME | grep -q Fedora; then
     echo "Installing dependencies for Fedora"
     # if not installed, install curl
-    if ! rpm -q curl; then
+    if ! rpm -qa curl; then
         sudo dnf install -y curl
     fi
 
@@ -73,12 +73,12 @@ elif echo $PRETTY_NAME | grep -q Fedora; then
     fi
 
     # if not installed, install git
-    if ! rpm -q git; then
+    if ! rpm -qa git; then
         sudo dnf install -y git
     fi
 
     # if not installed, install stow
-    if ! rpm -q stow; then
+    if ! rpm -qa stow; then
         sudo dnf install -y stow
     fi
 
@@ -98,12 +98,12 @@ elif echo $PRETTY_NAME | grep -q Fedora; then
     fi
 
     # if not installed, install fzf
-    if ! rpm -q fzf; then
+    if ! rpm -qa fzf; then
         sudo dnf install -y fzf
     fi
 
     # if not installed, install exa
-    if ! rpm -q eza; then
+    if ! rpm -qa eza; then
         sudo dnf install -y eza
     fi
 
