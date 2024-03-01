@@ -12,6 +12,7 @@ export MANWIDTH=999
 export PATH="$HOME/bin":$PATH
 export PATH="$HOME/.local/bin":$PATH
 export PATH="/root/.local/bin":$PATH
+export PATH="$PATH:/opt/nvim-linux64/bin"
 . "$HOME/.cargo/env"
 
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
