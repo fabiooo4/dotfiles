@@ -20,7 +20,7 @@ if  echo $PRETTY_NAME | grep -q Ubuntu; then
 
     # if not installed, install rust
     if ! command -v cargo &> /dev/null; then
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s
     fi
 
     # if not installed, install git
@@ -34,7 +34,7 @@ if  echo $PRETTY_NAME | grep -q Ubuntu; then
     fi
 
     # if not installed, install zplug
-    if [ ! -d ~/.zplug ]; then
+    if ! command -v zplug &> /dev/null; then
         curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
     fi
 
@@ -75,7 +75,7 @@ elif echo $PRETTY_NAME | grep -q Fedora; then
 
     # if not installed, install rust
     if ! command -v cargo &> /dev/null; then
-        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s
     fi
 
     # if not installed, install git
