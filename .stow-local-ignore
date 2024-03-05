@@ -1,6 +1,8 @@
 .git
 .gitignore
+.gitmodules
 
 README.*
+install.sh
 
 .zsh_history
