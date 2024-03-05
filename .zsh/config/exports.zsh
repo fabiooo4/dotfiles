@@ -11,6 +11,7 @@ export MANWIDTH=999
 # Path
 export PATH="$HOME/bin":$PATH
 export PATH="$HOME/.local/bin":$PATH
+export PATH="$HOME/.cargo/bin":$PATH
 export PATH="/root/.local/bin":$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 . "$HOME/.cargo/env"
