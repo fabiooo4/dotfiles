@@ -21,5 +21,5 @@ colorout::setOutputColors(
   stderror = 1, # red
   error = 1, # red
 
-  verbose = TRUE
+  verbose = FALSE
 )
