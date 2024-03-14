@@ -1,4 +1,5 @@
 # Colorize outputs in terminal (requires the "colorout" package)
+library(rmarkdown)
 require(colorout)
 
 colorout::setOutputColors(
@@ -23,3 +24,4 @@ colorout::setOutputColors(
 
   verbose = FALSE
 )
+Sys.setenv(R_PDFVIEWER = "sioyek")
