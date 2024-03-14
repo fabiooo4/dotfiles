@@ -1,6 +1,6 @@
 # Colorize outputs in terminal (requires the "colorout" package)
-if (!require("pacman")) install.packages("pacman")
-pacman::p_load(rmarkdown, colorout)
+library(rmarkdown)
+require(colorout)
 
 colorout::setOutputColors(
   index = 8, # gray
