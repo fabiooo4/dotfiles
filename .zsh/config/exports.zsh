@@ -13,6 +13,7 @@ export PATH="$HOME/bin":$PATH
 export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.cargo/bin":$PATH
 export PATH="/root/.local/bin":$PATH
+export PATH="/var/lib/flatpak/app/com.github.ahrm.sioyek/current/active/files/sioyek":$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 . "$HOME/.cargo/env"
 
