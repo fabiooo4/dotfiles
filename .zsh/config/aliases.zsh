@@ -9,3 +9,6 @@ alias gad="git add ."
 alias gcm="git commit -m"
 alias gps="git push"
 alias gpl="git pull"
+
+# nvim
+alias nvim="neovide"
