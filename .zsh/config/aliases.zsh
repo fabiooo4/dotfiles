@@ -10,5 +10,7 @@ alias gcm="git commit -m"
 alias gps="git push"
 alias gpl="git pull"
 
-# nvim
-alias nvim="neovide"
+# nvim (only fedora)
+if [ -f /etc/fedora-release ]; then
+  alias nvim="neovide"
+fi
