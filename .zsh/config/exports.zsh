@@ -6,7 +6,7 @@ export GPG_TTY=$(tty)
 export EDITOR='nvim'
 export VISUAL='nvim'
 export MANPAGER='nvim +Man!'
-export MANWIDTH=999
+export MANWIDTH=100
 
 # Path
 export PATH="$HOME/bin":$PATH
