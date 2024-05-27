@@ -12,6 +12,5 @@ alias gpl="git pull"
 
 # nvim (only fedora)
 if [ -f /etc/fedora-release ]; then
-  alias neovim="nvim"
-  alias nvim="neovide --frame none"
+  alias nvid="neovide --frame none"
 fi
