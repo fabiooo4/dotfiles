@@ -19,4 +19,4 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
 eval "$(starship init zsh)" # starship prompt
-eval "$(homebrew/bin/brew shellenv)" # homebrew
+eval "$($HOME/homebrew/bin/brew shellenv)" # homebrew

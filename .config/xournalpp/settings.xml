@@ -19,7 +19,7 @@
   <property name="maximized" value="true"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
-  <property name="sidebarWidth" value="50"/>
+  <property name="sidebarWidth" value="144"/>
   <property name="sidebarNumberingStyle" value="2"/>
   <property name="sidebarOnRight" value="false"/>
   <property name="scrollbarOnLeft" value="false"/>
@@ -62,7 +62,7 @@
   <property name="autoloadMostRecent" value="false"/>
   <property name="autoloadPdfXoj" value="true"/>
   <property name="defaultSaveName" value="%F-Note-%H-%M"/>
-  <property name="defaultPdfExportName" value="%{name}_annotated"/>
+  <property name="defaultPdfExportName" value="%{name}"/>
   <property name="autosaveEnabled" value="true"/>
   <property name="autosaveTimeout" value="3"/>
   <property name="addHorizontalSpace" value="false"/>
@@ -126,9 +126,9 @@
   <property name="latexSettings.defaultText" value="x^2"/>
   <property name="latexSettings.globalTemplatePath" value="/usr/share/xournalpp/resources/default_template.tex"/>
   <property name="latexSettings.genCmd" value="pdflatex -halt-on-error -interaction=nonstopmode '{}'"/>
-  <property name="latexSettings.sourceViewThemeId" value="classic"/>
-  <property name="latexSettings.editorFont" value="Monospace 12"/>
-  <property name="latexSettings.useCustomEditorFont" value="false"/>
+  <property name="latexSettings.sourceViewThemeId" value="cobalt"/>
+  <property name="latexSettings.editorFont" value="CaskaydiaCove Nerd Font 10"/>
+  <property name="latexSettings.useCustomEditorFont" value="true"/>
   <property name="latexSettings.editorWordWrap" value="true"/>
   <property name="latexSettings.sourceViewAutoIndent" value="true"/>
   <property name="latexSettings.sourceViewSyntaxHighlight" value="true"/>
@@ -226,8 +226,8 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="highlighter">
-      <attribute name="color" type="hex" value="f5e0dc"/>
-      <attribute name="drawingType" type="string" value="ellipse"/>
+      <attribute name="color" type="hex" value="f38ba8"/>
+      <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
       <attribute name="size" type="string" value="MEDIUM"/>
