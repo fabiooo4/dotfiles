@@ -16,6 +16,7 @@ export PATH="/root/.local/bin":$PATH
 export PATH="/var/lib/flatpak/app/com.github.ahrm.sioyek/current/active/files/sioyek":$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 . "$HOME/.cargo/env"
+export PATH="$PATH:/home/fabio/.spicetify"
 
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
 eval "$(starship init zsh)" # starship prompt

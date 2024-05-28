@@ -1,0 +1,8 @@
+pane	1	1	1	:*	1	fabio	:/home/fabio	1	zsh	:
+pane	2	1	1	:*	1	fabio	:/home/fabio	0	nvim	:nvim .tmux.conf
+pane	2	1	1	:*	2	fabio	:/home/fabio	1	zsh	:
+pane	main	1	1	:*	1	fabio	:/home/fabio	1	zsh	:
+window	1	1	:zsh	1	:*	b7c1,158x42,0,0,4	:
+window	2	1	:zsh	1	:*	f779,158x42,0,0{79x42,0,0,7,78x42,80,0,10}	:
+window	main	1	:zsh	1	:*	b7bd,158x42,0,0,0	off
+state	2	

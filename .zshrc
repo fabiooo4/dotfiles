@@ -27,5 +27,3 @@ zstyle ':completion:*' special-dirs true # Complete . and .. special directories
 zstyle ':completion:*' list-colors '' # colorize completion lists
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01' # colorize kill list
 zmodload zsh/complist # load comp list module
-
-export PATH=$PATH:/home/fabio/.spicetify
