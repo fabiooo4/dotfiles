@@ -1,0 +1,3 @@
+pane	main	1	1	:*	1	fabio	:/home/fabio/dotfiles	1	git	:git push
+window	main	1	:zsh	1	:*	bbc1,135x34,0,0,4	off
+state	main	
