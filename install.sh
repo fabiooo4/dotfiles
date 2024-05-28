@@ -122,6 +122,9 @@ if  echo $PRETTY_NAME | grep -q Ubuntu; then
         ~/.local/share/nvim/site/pack/packer/start/packer.nvim
     fi
 
+    # Clone tpm for tmux
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
   else
     echo "Unsupported distribution"
     exit 1
