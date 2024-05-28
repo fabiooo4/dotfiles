@@ -326,7 +326,6 @@ appearance:
   vibrancyType: blur
   spaciness: 0.6
   colorSchemeMode: dark
-  vibrancy: true
 profiles: []
 groups: []
 profileDefaults:
@@ -352,4 +351,6 @@ hacks:
 language: null
 defaultQuickConnectProvider: ssh
 pluginBlacklist: []
-backgroundPlugin: {}
+backgroundPlugin:
+  uiFontEnabled: true
+  uiFontFamily: CaskaydiaCove Nerd Font
