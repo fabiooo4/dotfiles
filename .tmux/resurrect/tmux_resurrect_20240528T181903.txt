@@ -1,0 +1,9 @@
+pane	4	1	1	:*	1	fabibo	:/home/fabio/dotfiles/.config/alacritty	1	zsh	:
+pane	5	1	0	:-	1	fabibo	:/home/fabio/dotfiles/.config/alacritty	1	nvim	:nvim alacritty.toml
+pane	5	2	1	:*	1	fabibo	:/home/fabio/uni	1	nvim	:nvim .
+pane	main	1	1	:*	1	fabio	:/home/fabio/dotfiles	1	zsh	:
+window	4	1	:zsh	1	:*	b9a1,96x44,0,0,4	:
+window	5	1	:nvim	0	:-	cc62,88x39,0,0,5	:
+window	5	2	:nvim	1	:*	cc63,88x39,0,0,6	:
+window	main	1	:zsh	1	:*	c99e,96x29,0,0,1	off
+state	5	
