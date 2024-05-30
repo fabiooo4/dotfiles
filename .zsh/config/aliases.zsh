@@ -1,6 +1,6 @@
 # exa
-alias l="eza --icons --group-directories-first -l"
-alias ll="eza --icons --group-directories-first -la"
+alias l="eza --icons --group-directories-first -l --no-permissions --no-filesize --long --git --no-time --no-user"
+alias ll="eza --icons --group-directories-first -la --no-permissions --no-filesize --long --git --no-time --no-user"
 alias ls="eza"
 alias tree="eza --tree"
 

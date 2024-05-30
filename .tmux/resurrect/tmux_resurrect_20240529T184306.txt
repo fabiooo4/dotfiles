@@ -1,0 +1,5 @@
+pane	5	1	1	:*	1	fabibo	:/home/fabio/dotfiles	1	zsh	:
+pane	5	2	0	:-	1	fabibo	:/home/fabio/.local/share/nvim/lazy/friendly-snippets	1	zsh	:
+window	5	1	:zsh	1	:*	c0fe,128x35,0,0,1	:
+window	5	2	:zsh	0	:-	c0ff,128x35,0,0,2	:
+state	5	
