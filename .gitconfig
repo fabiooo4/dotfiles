@@ -9,9 +9,14 @@
 [init]
   defaultBranch = main
 
+[pull]
+  rebase = false
+
+[submodule]
+  recurse = true
+
 [interactive]
     diffFilter = delta --color-only
-
 
 # Delta configuration
 [delta]
