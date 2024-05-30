@@ -24,7 +24,15 @@ eval "$(starship init zsh)" # starship prompt
 eval "$($HOME/homebrew/bin/brew shellenv)" # homebrew
 export BAT_THEME="Catppuccin Mocha"
 
+# --- fzf config ---
 source <(fzf --zsh)
+
+# Theme
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+
 # -- Use fd instead of fzf --
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -62,6 +70,7 @@ _fzf_comprun() {
     *)            fzf --preview "$show_file_or_dir_preview" "$@" ;;
   esac
 }
+# --- fzf config ---
 
 source ~/fzf-git.sh/fzf-git.sh
 export KEYTIMEOUT=100
