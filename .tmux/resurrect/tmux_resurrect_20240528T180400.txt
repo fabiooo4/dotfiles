@@ -1,5 +1,0 @@
-pane	2	1	1	:*	1	fabibo	:/home/fabio	1	zsh	:
-pane	main	1	1	:*	1	fabio	:/home/fabio/dotfiles	1	zsh	:
-window	2	1	:zsh	1	:*	b25f,80x24,0,0,2	:
-window	main	1	:zsh	1	:*	abfe,160x40,0,0,1	off
-state	2	

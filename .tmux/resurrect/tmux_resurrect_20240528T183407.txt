@@ -1,5 +1,0 @@
-pane	5	1	0	:-	1	fabibo	:/home/fabio/dotfiles/.config/alacritty	1	nvim	:nvim alacritty.toml
-pane	5	2	1	:*	1	fabibo	:/home/fabio/uni	1	zsh	:
-window	5	1	:nvim	0	:-	bc05,160x44,0,0,8	:
-window	5	2	:zsh	1	:*	b406,160x42,0,0,9	:
-state	5	

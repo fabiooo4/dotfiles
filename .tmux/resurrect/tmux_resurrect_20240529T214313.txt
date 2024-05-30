@@ -1,5 +1,0 @@
-pane	5	1	1	:*	1	fabibo	:/home/fabio/uni	1	nvim	:nvim
-pane	5	2	0	:-	1	fabibo	:/home/fabio/dotfiles/.config/nvim	1	nvim	:nvim
-window	5	1	:nvim	1	:*	b19e,96x42,0,0,1	:
-window	5	2	:nvim	0	:-	b9a0,96x44,0,0,3	:
-state	5	
