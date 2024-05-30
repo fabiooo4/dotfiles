@@ -1,0 +1,4 @@
+pane	5	1	1	:*	1	fabibo	:/home/fabio/dotfiles	0	nvim	:nvim .
+pane	5	1	1	:*	2	fabibo	:/home/fabio	1	zsh	:
+window	5	1	:zsh	1	:*	6d16,128x35,0,0{64x35,0,0,4,63x35,65,0,5}	:
+state	5	

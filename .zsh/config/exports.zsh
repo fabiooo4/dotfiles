@@ -22,7 +22,7 @@ export PATH="$PATH:/home/fabio/.spicetify"
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
 eval "$(starship init zsh)" # starship prompt
 eval "$($HOME/homebrew/bin/brew shellenv)" # homebrew
-
+export BAT_THEME="Catppuccin Mocha"
 
 source <(fzf --zsh)
 # -- Use fd instead of fzf --
