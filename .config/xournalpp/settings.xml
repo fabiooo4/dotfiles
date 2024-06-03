@@ -6,8 +6,8 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Right hand Note Taking Copy"/>
-  <property name="lastSavePath" value="/home/fabio/dotfiles/.config/xournalpp/templates"/>
-  <property name="lastOpenPath" value="/home/fabio/uni/SecondoSemestre/Architettura/disegni"/>
+  <property name="lastSavePath" value="/home/fabio/uni/SecondoSemestre/Architettura/disegni"/>
+  <property name="lastOpenPath" value="/home/fabio/uni/SecondoSemestre/Architettura/esercitazioni/memorie"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -19,7 +19,7 @@
   <property name="maximized" value="true"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
-  <property name="sidebarWidth" value="144"/>
+  <property name="sidebarWidth" value="50"/>
   <property name="sidebarNumberingStyle" value="1"/>
   <property name="sidebarOnRight" value="false"/>
   <property name="scrollbarOnLeft" value="false"/>
@@ -34,7 +34,7 @@
   <property name="layoutBottomToTop" value="false"/>
   <property name="numPairsOffset" value="1"/>
   <!--The icon theme, allowed values are "disabled", "onDrawOfLastPage", and "onScrollOfLastPage"-->
-  <property name="emptyLastPageAppend" value="onDrawOfLastPage"/>
+  <property name="emptyLastPageAppend" value="disabled"/>
   <property name="presentationMode" value="false"/>
   <!--Which GUI elements are shown in default view mode, separated by a colon (,)-->
   <property name="defaultViewModeAttributes" value="showMenubar,showToolbar,showSidebar"/>
@@ -75,7 +75,7 @@
   <property name="snapRotationTolerance" value="0.3"/>
   <property name="snapGrid" value="false"/>
   <property name="snapGridTolerance" value="0.5"/>
-  <property name="snapGridSize" value="14.17"/>
+  <property name="snapGridSize" value="7.085"/>
   <property name="strokeRecognizerMinSize" value="40"/>
   <property name="touchDrawing" value="false"/>
   <property name="gtkTouchInertialScrolling" value="true"/>
@@ -108,7 +108,7 @@
   <property name="doActionOnStrokeFiltered" value="false"/>
   <property name="trySelectOnStrokeFiltered" value="false"/>
   <property name="snapRecognizedShapesEnabled" value="false"/>
-  <property name="restoreLineWidthEnabled" value="false"/>
+  <property name="restoreLineWidthEnabled" value="true"/>
   <property name="numIgnoredStylusEvents" value="0"/>
   <property name="inputSystemTPCButton" value="false"/>
   <property name="inputSystemDrawOutsideWindow" value="true"/>
@@ -123,13 +123,13 @@
   <property name="stabilizerCuspDetection" value="true"/>
   <property name="stabilizerFinalizeStroke" value="true"/>
   <property name="latexSettings.autoCheckDependencies" value="true"/>
-  <property name="latexSettings.defaultText" value="x^2"/>
+  <property name="latexSettings.defaultText" value=""/>
   <property name="latexSettings.globalTemplatePath" value="/usr/share/xournalpp/resources/default_template.tex"/>
   <property name="latexSettings.genCmd" value="pdflatex -halt-on-error -interaction=nonstopmode '{}'"/>
   <property name="latexSettings.sourceViewThemeId" value="cobalt"/>
   <property name="latexSettings.editorFont" value="CaskaydiaCove Nerd Font 12"/>
   <property name="latexSettings.useCustomEditorFont" value="true"/>
-  <property name="latexSettings.editorWordWrap" value="true"/>
+  <property name="latexSettings.editorWordWrap" value="false"/>
   <property name="latexSettings.sourceViewAutoIndent" value="true"/>
   <property name="latexSettings.sourceViewSyntaxHighlight" value="true"/>
   <property name="latexSettings.sourceViewShowLineNumbers" value="false"/>
@@ -188,7 +188,7 @@
     <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
-    <attribute name="current" type="string" value="pen"/>
+    <attribute name="current" type="string" value="selectRect"/>
     <data name="drawArrow">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
@@ -263,7 +263,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="f38ba8"/>
+      <attribute name="color" type="hex" value="e0e0f4"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="verticalSpace">
