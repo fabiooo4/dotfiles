@@ -7,7 +7,7 @@
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Right hand Note Taking Copy"/>
   <property name="lastSavePath" value="/home/fabio/uni/SecondoSemestre/Architettura/disegni"/>
-  <property name="lastOpenPath" value="/home/fabio/uni/SecondoSemestre/Architettura/esercitazioni/memorie"/>
+  <property name="lastOpenPath" value="/home/fabio/uni/SecondoSemestre/Architettura/disegni"/>
   <property name="lastImagePath" value=""/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -188,7 +188,7 @@
     <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
-    <attribute name="current" type="string" value="selectRect"/>
+    <attribute name="current" type="string" value="text"/>
     <data name="drawArrow">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
