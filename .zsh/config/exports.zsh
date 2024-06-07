@@ -18,7 +18,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 . "$HOME/.cargo/env"
 export PATH="$PATH:/home/fabio/.spicetify"
 
-export PKG_CONFIG_PATH="/usr/lib64/pkgconfig"
+export PKG_CONFIG_PATH="/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig"
 
 # Command line tools
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
