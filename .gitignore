@@ -1,3 +1,5 @@
 .zsh_history
 github-copilot
 .tmux/plugins
+.config/xournalpp/metadata
+.config/xournalpp/plugins
