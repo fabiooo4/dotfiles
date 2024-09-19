@@ -74,5 +74,16 @@ _fzf_comprun() {
 }
 # --- fzf config ---
 
+# --- yazi config ---
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+# --- yazi config ---
+
 source ~/fzf-git.sh/fzf-git.sh
 export KEYTIMEOUT=100
