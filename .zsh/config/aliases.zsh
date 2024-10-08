@@ -14,3 +14,6 @@ alias gpl="git pull"
 if [ -f /etc/fedora-release ]; then
   alias nvid="neovide --frame none"
 fi
+
+# Hyprland config
+alias hyprconf="nvim ~/.config/hypr/"
