@@ -15,5 +15,11 @@ if [ -f /etc/fedora-release ]; then
   alias nvid="neovide --frame none"
 fi
 
+# Spicetify
+alias spicetify="sudo chmod a+wr /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/
+sudo chmod a+wr /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/Apps -R
+spicetify"
+
 # Hyprland config
 alias hyprconf="nvim ~/.config/hypr/"
+
