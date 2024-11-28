@@ -22,4 +22,3 @@ spicetify"
 
 # Hyprland config
 alias hyprconf="nvim ~/.config/hypr/"
-
