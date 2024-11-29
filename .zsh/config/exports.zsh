@@ -24,7 +24,7 @@ export PKG_CONFIG_PATH="/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig:/us
 # Command line tools
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
 eval "$(starship init zsh)" # starship prompt
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" # homebrew
+eval "$($HOME/homebrew/bin/brew shellenv)" # homebrew
 export BAT_THEME="Catppuccin Mocha"
 
 # --- fzf config ---
