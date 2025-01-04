@@ -28,14 +28,21 @@ eval "$($HOME/homebrew/bin/brew shellenv)" # homebrew
 export BAT_THEME="gruvbox-dark"
 
 # --- fzf config ---
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
 
 # Theme
+# Catppuccin Mocha
 # export FZF_DEFAULT_OPTS=" \
 # --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
 # --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 # --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+
+# Gruvbox
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --color=fg:-1,fg+:#fe8019,bg:-1,bg+:#32302f
+  --color=hl:#458588,hl+:#83a598,info:#a89984,marker:#98971a
+  --color=prompt:#cc241d,spinner:#b16286,pointer:#d3869b,header:#98971a
+  --color=border:#928374,scrollbar:#7c6f64,label:#d5c4a1,query:#ebdbb2'
 
 # -- Use fd instead of fzf --
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
@@ -63,6 +70,7 @@ export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 # Advanced customization of fzf options via _fzf_comprun function
 # - The first argument to the function is the name of the command.
 # - You should make sure to pass the rest of the arguments to fzf.
+export FZF_COMPLETION_TRIGGER='**'
 _fzf_comprun() {
   local command=$1
   shift
