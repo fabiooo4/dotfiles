@@ -6,9 +6,9 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Right hand Note Taking Copy"/>
-  <property name="lastSavePath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Reti"/>
-  <property name="lastOpenPath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Reti"/>
-  <property name="lastImagePath" value=""/>
+  <property name="lastSavePath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Reti/Esami"/>
+  <property name="lastOpenPath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Reti/Esami"/>
+  <property name="lastImagePath" value="/home/fabio/Downloads"/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
   <property name="zoomStep" value="10"/>
@@ -134,7 +134,7 @@
   <property name="latexSettings.sourceViewAutoIndent" value="true"/>
   <property name="latexSettings.sourceViewSyntaxHighlight" value="true"/>
   <property name="latexSettings.sourceViewShowLineNumbers" value="false"/>
-  <property name="font" font="CaskaydiaCove Nerd Font" size="10"/>
+  <property name="font" font="CaskaydiaCove Nerd Font" size="9"/>
   <data name="buttonConfig">
     <data name="default">
       <attribute name="color" type="hex" value="ffe0e0f4"/>
@@ -166,6 +166,14 @@
     </data>
   </data>
   <data name="deviceClasses">
+    <data name="Wacom One by Wacom S Pen">
+      <attribute name="deviceClass" type="int" value="2"/>
+      <attribute name="deviceSource" type="int" value="1"/>
+    </data>
+    <data name="Wacom One by Wacom S Pen (Eraser)">
+      <attribute name="deviceClass" type="int" value="3"/>
+      <attribute name="deviceSource" type="int" value="2"/>
+    </data>
     <data name="Wayland Finger Scrolling">
       <attribute name="deviceClass" type="int" value="2"/>
       <attribute name="deviceSource" type="int" value="6"/>
@@ -220,17 +228,17 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="highlighter">
-      <attribute name="color" type="hex" value="cba6f7"/>
-      <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="fill" type="int" value="0"/>
+      <attribute name="color" type="hex" value="fab387"/>
+      <attribute name="drawingType" type="string" value="rectangle"/>
+      <attribute name="fill" type="int" value="1"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="MEDIUM"/>
+      <attribute name="size" type="string" value="THIN"/>
     </data>
     <data name="image">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="a6e3a1"/>
+      <attribute name="color" type="hex" value="ffe0e0f4"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
