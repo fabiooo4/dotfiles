@@ -12,6 +12,6 @@ stty stop undef
 
 # Source other configs
 source $ZSH/config/exports.zsh
-source $ZSH/config/history.zsh
 source $ZSH/config/aliases.zsh
+source $ZSH/config/history.zsh
 source $ZSH/config/plugins.zsh
