@@ -16,7 +16,7 @@ export PATH="/root/.local/bin":$PATH
 export PATH="/var/lib/flatpak/app/com.github.ahrm.sioyek/current/active/files/sioyek":$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/opt/nvim/"
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 export PATH="$PATH:/home/fabio/.spicetify"
 
 export PKG_CONFIG_PATH="/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
@@ -24,7 +24,6 @@ export PKG_CONFIG_PATH="/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig:/us
 # Command line tools
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
 eval "$(starship init zsh)" # starship prompt
-eval "$($HOME/homebrew/bin/brew shellenv)" # homebrew
 export BAT_THEME="gruvbox-dark"
 
 # fzf config
