@@ -1,20 +1,22 @@
 # Set theme
 palette = "gruvbox_dark"
 
-format = """
-[[](color_red)\
+format = """\
+[\\[](color_red)\
 $username\
 [@](color_green)\
 $hostname\
 $directory\
-[]](color_red)\
+[\\]](color_red)\
+$git_branch\
+$git_status\
 $character\
 """
 
 [character]
-success_symbol = "[$](color_fg0)"
-error_symbol = "[$](color_red)"
-vimcmd_symbol = "[$](color_green)"
+success_symbol = '[\$](color_fg0)'
+error_symbol = '[\$](color_red)'
+vimcmd_symbol = '[\$](color_green)'
 
 [directory]
 truncation_length = 4
@@ -24,7 +26,7 @@ format = "[ $path]($style)"
 
 [username]
 show_always = true
-style_user = "color_yellow"
+style_user = "color_yellow bold"
 style_root = "color_yellow bold"
 format = '[$user]($style)'
 disabled = false
@@ -34,6 +36,18 @@ ssh_only = false
 style = "color_blue"
 format = '[$hostname]($style)'
 disabled = false
+
+[git_branch]
+style = "color_aqua"
+format = '[ $symbol$branch ]($style)'
+
+[git_status]
+style = "color_orange"
+conflicted = "✖"
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+untracked = "…"
 
 [palettes.gruvbox_dark]
 color_fg0 = '#fbf1c7'
