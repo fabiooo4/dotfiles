@@ -33,4 +33,4 @@
 [diff]
     colorMoved = default
 [pager]
-	diff = bat --paging never --pager none --theme gruvbox-dark --language diff
+	diff = bat --theme gruvbox-dark --language diff
