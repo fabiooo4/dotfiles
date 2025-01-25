@@ -1,15 +1,39 @@
 # Set theme
 palette = "gruvbox_dark"
 
+format = """
+[[](color_red)\
+$username\
+[@](color_green)\
+$hostname\
+$directory\
+[]](color_red)\
+$character\
+"""
+
 [character]
-success_symbol = "[[](color_red) ❯](color_green)"
-error_symbol = "[❯](color_red)"
-vimcmd_symbol = "[❮](color_green)"
+success_symbol = "[$](color_fg0)"
+error_symbol = "[$](color_red)"
+vimcmd_symbol = "[$](color_green)"
 
 [directory]
 truncation_length = 4
-style = "bold color_aqua"
-format = "[$path ]($style)"
+style = "color_purple"
+truncation_symbol = "…/"
+format = "[ $path]($style)"
+
+[username]
+show_always = true
+style_user = "color_yellow"
+style_root = "color_yellow bold"
+format = '[$user]($style)'
+disabled = false
+
+[hostname]
+ssh_only = false
+style = "color_blue"
+format = '[$hostname]($style)'
+disabled = false
 
 [palettes.gruvbox_dark]
 color_fg0 = '#fbf1c7'
