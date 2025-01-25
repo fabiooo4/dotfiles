@@ -1,3 +1,7 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:fabiooo4/Neovim
+
+[submodule ".config/nixos"]
+	path = .config/nixos
+	url = git@github.com:fabiooo4/NixOS-Config
