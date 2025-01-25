@@ -4,7 +4,7 @@
 
 [core]
   editor = nvim
-  pager = delta
+	pager = bat --theme gruvbox-dark
 
 [init]
   defaultBranch = main
@@ -32,3 +32,5 @@
 
 [diff]
     colorMoved = default
+[pager]
+	diff = bat --paging never --pager none --theme gruvbox-dark --language diff
