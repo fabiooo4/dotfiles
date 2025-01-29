@@ -2,12 +2,12 @@
 palette = "gruvbox_dark"
 
 format = """\
-[\\[](color_red)\
+[\\[](color_red bold)\
 $username\
-[@](color_green)\
+[@](color_green bold)\
 $hostname\
 $directory\
-[\\]](color_red)\
+[\\]](color_red bold)\
 $git_branch\
 $git_status\
 $character\
@@ -20,7 +20,7 @@ vimcmd_symbol = '[\$](color_green)'
 
 [directory]
 truncation_length = 4
-style = "color_purple"
+style = "color_purple bold"
 truncation_symbol = "…/"
 format = "[ $path]($style)"
 
@@ -33,16 +33,16 @@ disabled = false
 
 [hostname]
 ssh_only = false
-style = "color_blue"
+style = "color_blue bold"
 format = '[$hostname]($style)'
 disabled = false
 
 [git_branch]
-style = "color_aqua"
+style = "color_aqua bold"
 format = '[ $symbol$branch ]($style)'
 
 [git_status]
-style = "color_orange"
+style = "color_orange bold"
 conflicted = "✖"
 ahead = "⇡"
 behind = "⇣"
