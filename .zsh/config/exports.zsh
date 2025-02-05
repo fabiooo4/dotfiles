@@ -27,12 +27,12 @@ eval "$(starship init zsh)" # starship prompt
 export BAT_THEME="gruvbox-dark"
 
 # fzf config
-[ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
+[ -f ../fzf.zsh ] && source ~/.zsh/fzf.zsh
 
 # yazi config
-[ -f ~/.zsh/yazi.zsh ] && source ~/.zsh/yazi.zsh
+[ -f ../yazi.zsh ] && source ~/.zsh/yazi.zsh
 
 # fzf-git
-[ -f ~/.zsh/fzf-git.zsh ] && source ~/.zsh/.fzf-git.zsh
+[ -f ../fzf-git.zsh ] && source ~/.zsh/.fzf-git.zsh
 
 export KEYTIMEOUT=100
