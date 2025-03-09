@@ -18,6 +18,7 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 export PATH="$PATH:/opt/nvim/"
 # . "$HOME/.cargo/env"
 export PATH="$PATH:/home/fabio/.spicetify"
+export PATH=$PATH:/opt/gradle/gradle-8.13/bin # Java
 
 export PKG_CONFIG_PATH="/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
 

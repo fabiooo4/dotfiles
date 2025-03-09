@@ -22,3 +22,6 @@ spicetify"
 
 # Hyprland config
 alias hyprconf="nvim ~/.config/hypr/"
+
+# ESP-IDF
+alias get_idf='. $HOME/esp/esp-idf/export.sh'

@@ -6,8 +6,8 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Right hand Note Taking Copy"/>
-  <property name="lastSavePath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Sistemi/Esercizi"/>
-  <property name="lastOpenPath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Sistemi/Esercizi"/>
+  <property name="lastSavePath" value="/home/fabio/uni/SecondoAnno/SecondoSemestre/Fisica2"/>
+  <property name="lastOpenPath" value="/home/fabio/uni/SecondoAnno/SecondoSemestre/Fisica2"/>
   <property name="lastImagePath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Sistemi/Esercizi"/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -125,9 +125,9 @@
   <property name="stabilizerFinalizeStroke" value="true"/>
   <property name="latexSettings.autoCheckDependencies" value="true"/>
   <property name="latexSettings.defaultText" value=""/>
-  <property name="latexSettings.globalTemplatePath" value="/usr/share/xournalpp/resources/default_template.tex"/>
+  <property name="latexSettings.globalTemplatePath" value="/home/fabio/.config/xournalpp/templates/texfont_template.tex"/>
   <property name="latexSettings.genCmd" value="pdflatex -halt-on-error -interaction=nonstopmode '{}'"/>
-  <property name="latexSettings.sourceViewThemeId" value="cobalt"/>
+  <property name="latexSettings.sourceViewThemeId" value="oblivion"/>
   <property name="latexSettings.editorFont" value="CaskaydiaCove Nerd Font 12"/>
   <property name="latexSettings.useCustomEditorFont" value="true"/>
   <property name="latexSettings.editorWordWrap" value="false"/>
@@ -200,7 +200,7 @@
     <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
-    <attribute name="current" type="string" value="selectRect"/>
+    <attribute name="current" type="string" value="eraser"/>
     <data name="drawArrow">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
@@ -275,7 +275,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="e0e0f4"/>
+      <attribute name="color" type="hex" value="ff000000"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="verticalSpace">
