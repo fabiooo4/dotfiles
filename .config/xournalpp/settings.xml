@@ -200,7 +200,7 @@
     <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
-    <attribute name="current" type="string" value="selectRect"/>
+    <attribute name="current" type="string" value="pen"/>
     <data name="drawArrow">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
@@ -221,7 +221,7 @@
     </data>
     <data name="eraser">
       <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="THIN"/>
+      <attribute name="size" type="string" value="VERY_FINE"/>
       <attribute name="type" type="string" value="deleteStroke"/>
     </data>
     <data name="hand">
@@ -239,11 +239,11 @@
     </data>
     <data name="pen">
       <attribute name="color" type="hex" value="ffe0e0f4"/>
-      <attribute name="drawingType" type="string" value="arrow"/>
+      <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
       <attribute name="size" type="string" value="THIN"/>
-      <attribute name="style" type="string" value="dash"/>
+      <attribute name="style" type="string" value="plain"/>
     </data>
     <data name="playObject">
       <attribute name="drawingType" type="string" value="default"/>
@@ -275,7 +275,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="ffe01b24"/>
+      <attribute name="color" type="hex" value="ff3584e4"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="verticalSpace">
