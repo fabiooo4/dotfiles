@@ -1,0 +1,78 @@
+#!/bin/bash
+
+OLLAMA_SERVICE="ollama"
+OPEN_WEBUI_SERVICE="open-webui"
+
+main() {
+  case "$1" in
+    start)
+      start_services
+      ;;
+    stop)
+      stop_services
+      ;;
+    *)
+      # Check if it's a recognized ollama command
+      if command -v ollama >/dev/null && ollama "$1" &>/dev/null; then
+        ollama "$@"
+      else
+        # Single text input or unrecognized command
+        if [[ $# -eq 1 ]]; then
+          prompt_and_run "$1"
+        else
+          echo "Invalid command: $1" >&2
+          help_message
+          exit 1
+        fi
+      fi
+      ;;
+  esac
+}
+
+start_services() {
+  echo "Starting $OLLAMA_SERVICE and $OPEN_WEBUI_SERVICE services..."
+  sudo systemctl start $OLLAMA_SERVICE.service
+  sudo systemctl start $OPEN_WEBUI_SERVICE.service
+  check_service_status "$OLLAMA_SERVICE"
+  check_service_status "$OPEN_WEBUI_SERVICE"
+}
+
+stop_services() {
+  echo "Stopping $OLLAMA_SERVICE and $OPEN_WEBUI_SERVICE services..."
+  sudo systemctl stop $OLLAMA_SERVICE.service
+  sudo systemctl stop $OPEN_WEBUI_SERVICE.service
+  check_service_status "$OLLAMA_SERVICE"
+  check_service_status "$OPEN_WEBUI_SERVICE"
+}
+
+check_service_status() {
+  local service=$1
+  if systemctl is-active --quiet $service; then
+    echo "$service: running"
+  else
+    echo "$service: not running"
+  fi
+}
+
+# Function to run a prompt with the first available model
+prompt_and_run() {
+  if systemctl is-active --quiet $OLLAMA_SERVICE; then
+    MODEL_NAME=$(ollama list | head -n 2 | tail -n 1 | awk '{print $1}')
+    echo "Prompting to model '$MODEL_NAME'" >&2
+    echo >&2
+    ollama run "$MODEL_NAME" "$1"
+  else
+    echo "The service $OLLAMA_SERVICE is not running. Please start it first by running:"
+    echo "$0 start"
+  fi
+}
+
+help_message() {
+  echo "Usage: $0 {start|stop|<prompt>}"
+  echo "  start  - Start the Ollama and Open WebUI services"
+  echo "  stop   - Stop the Ollama and Open WebUI services"
+  echo "  <prompt> - Run a prompt with the first available model"
+}
+
+# Run the main function
+main "$@"

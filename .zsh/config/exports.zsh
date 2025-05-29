@@ -12,6 +12,8 @@ export MANWIDTH=100
 export PATH="$HOME/bin":$PATH
 export PATH="$HOME/.local/bin":$PATH
 export PATH="$HOME/.cargo/bin":$PATH
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$HOME/go/bin":$PATH
 export PATH="/root/.local/bin":$PATH
 export PATH="/var/lib/flatpak/app/com.github.ahrm.sioyek/current/active/files/sioyek":$PATH
 export PATH="$PATH:/opt/nvim-linux64/bin"
@@ -26,6 +28,11 @@ export PKG_CONFIG_PATH="/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig:/us
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
 eval "$(starship init zsh)" # starship prompt
 export BAT_THEME="gruvbox-dark"
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+eval "$(pyenv virtualenv-init -)"
 
 # fzf config
 [ -f $HOME/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
