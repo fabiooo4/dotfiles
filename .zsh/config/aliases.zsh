@@ -6,9 +6,20 @@ alias tree="eza --tree"
 
 # git
 alias gad="git add ."
+alias gap="git add --patch"
+alias gcv="git commit -v"
+alias gce="git commit --amend"
 alias gcm="git commit -m"
 alias gps="git push"
 alias gpl="git pull"
+alias gst="git status --short"
+alias gds="git diff --staged"
+alias gdf="git diff"
+alias glg="git log --color --all --graph --pretty=format:'%C(green)%h %C(yellow) %an  %C(cyan)%ar%C(blue)  %D%n%C(white)%C(bold)%C(italic)%s%n' | tac"
+alias gbr="git branch"
+alias gbn="git checkout -b"
+alias gcl="git clone"
+alias grt="git reset"
 
 # nvim (only fedora)
 if [ -f /etc/fedora-release ]; then

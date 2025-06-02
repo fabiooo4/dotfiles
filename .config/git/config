@@ -1,0 +1,96 @@
+[user]
+  name = fabiooo4
+  email = fabioirimie@gmail.com
+
+[core]
+  compression = 9
+  whitespace = error
+  preloadindex = true
+  editor = nvim
+  pager = delta
+
+[pager]
+  branch = false
+  tag = false
+  log = false
+
+[advice]
+  addEmptyPathspec = false
+  pushNonFastForward = false
+  statusHints = false
+
+[url "git@github.com:fabiooo4/"]
+  insteadof = "fb:"
+
+[status]
+  branch = true
+  showStash = true
+  showUntrackedFiles = all
+
+[init]
+  defaultBranch = main
+
+[diff]
+  context = 3
+  renames = copies
+  interHunkContext = 10
+  colorMoved = default
+
+[commit]
+  template = ~/.config/git/template
+
+# Delta configuration
+[interactive]
+  diffFilter = delta --color-only
+  singlekey = true
+
+[merge]
+  conflictstyle = zdiff3
+
+[include]
+  path = ~/.config/git/themes.gitconfig
+
+[delta]
+  features = gruvmax-fang
+  navigate = true    # use n and N to move between diff sections
+  side-by-side = true
+
+[push]
+  autoSetupRemote = true
+  default = current
+
+[pull]
+  default = current
+  rebase = true
+
+[log]
+  abbrevCommit = true
+  graphColors = blue,yellow,cyan,magenta,green,red
+
+[branch]
+  sort = -committerdate
+  
+[tag]
+  sort = -taggerdate
+
+[rebase]
+  autoStash = true
+  missingCommitsCheck = warn
+
+[submodule]
+  recurse = true
+
+[color "branch"]
+  current = yellow
+  local = default
+  remote = cyan
+  upstream = green
+  plain = blue
+
+[color "status"]
+  localbranch = blue
+  remotebranch = cyan
+  untracked = white dim
+  changed = yellow
+  added = green
+  unmerged = cyan
