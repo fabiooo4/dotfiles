@@ -6,8 +6,8 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Right hand Note Taking Copy"/>
-  <property name="lastSavePath" value="/home/fabio/uni/SecondoAnno/SecondoSemestre/Fisica2"/>
-  <property name="lastOpenPath" value="/home/fabio/uni/SecondoAnno/SecondoSemestre/Fisica2"/>
+  <property name="lastSavePath" value="/home/fabio/uni/SecondoAnno/SecondoSemestre/Analisi2/Esami"/>
+  <property name="lastOpenPath" value="/home/fabio/uni/SecondoAnno/SecondoSemestre/Analisi2/Esami"/>
   <property name="lastImagePath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Sistemi/Esercizi"/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -92,7 +92,7 @@
   <property name="preloadPagesAfter" value="5"/>
   <property name="eagerPageCleanup" value="true"/>
   <!--Config for new pages-->
-  <property name="pageTemplate" value="xoj/template&#10;copyLastPageSize=false&#10;copyLastPageSettings=false&#10;size=595.275591x841.889764&#10;backgroundType=graph&#10;backgroundTypeConfig=r1=20&#10;backgroundColor=#1e1e2e&#10;"/>
+  <property name="pageTemplate" value="xoj/template&#10;copyLastPageSize=false&#10;copyLastPageSettings=false&#10;size=595.275591x841.889764&#10;backgroundType=graph&#10;backgroundColor=#1e1e2e&#10;"/>
   <property name="sizeUnit" value=""/>
   <property name="audioFolder" value=""/>
   <property name="audioInputDevice" value="-1"/>
@@ -200,7 +200,7 @@
     <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
-    <attribute name="current" type="string" value="eraser"/>
+    <attribute name="current" type="string" value="hand"/>
     <data name="drawArrow">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
@@ -221,7 +221,7 @@
     </data>
     <data name="eraser">
       <attribute name="drawingType" type="string" value="default"/>
-      <attribute name="size" type="string" value="VERY_FINE"/>
+      <attribute name="size" type="string" value="THIN"/>
       <attribute name="type" type="string" value="deleteStroke"/>
     </data>
     <data name="hand">
@@ -238,11 +238,11 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="ff3584e4"/>
-      <attribute name="drawingType" type="string" value="spline"/>
+      <attribute name="color" type="hex" value="ffe0e0f4"/>
+      <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
-      <attribute name="size" type="string" value="MEDIUM"/>
+      <attribute name="size" type="string" value="THIN"/>
       <attribute name="style" type="string" value="plain"/>
     </data>
     <data name="playObject">
@@ -275,7 +275,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="ff000000"/>
+      <attribute name="color" type="hex" value="e0e0f4"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="verticalSpace">
