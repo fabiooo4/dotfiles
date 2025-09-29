@@ -21,6 +21,9 @@ alias gbn="git checkout -b"
 alias gcl="git clone"
 alias grt="git reset"
 
+# open
+alias open="xdg-open"
+
 # nvim (only fedora)
 if [ -f /etc/fedora-release ]; then
   alias nvid="neovide --frame none"

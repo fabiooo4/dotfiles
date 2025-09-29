@@ -21,8 +21,12 @@ export PATH="$PATH:/opt/nvim/"
 # . "$HOME/.cargo/env"
 export PATH="$PATH:/home/fabio/.spicetify"
 export PATH=$PATH:/opt/gradle/gradle-8.13/bin # Java
+export PATH="$HOME/flutter_sdk/flutter/bin:$PATH" # Flutter
+export PATH="$HOME/flutter_sdk/android-studio/bin:$PATH" # Android studio
 
 export PKG_CONFIG_PATH="/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
+
+export GOOGLE_CLOUD_PROJECT="phonic-scheme-464714-k7"
 
 # Command line tools
 eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
