@@ -4,13 +4,7 @@ This repo contains the dotfiles for my system
 
 ## Requirements
 
-Install all the dependencies by running:
-
-```
-sudo ./install.sh
-```
-
-or manually ensure you have installed all the following dependencies:
+Ensure you have installed all the following dependencies:
 
 - `curl`
 - `rust`
