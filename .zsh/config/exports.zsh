@@ -24,7 +24,7 @@ export PATH=$PATH:/opt/gradle/gradle-8.13/bin # Java
 export PATH="$HOME/flutter_sdk/flutter/bin:$PATH" # Flutter
 export PATH="$HOME/flutter_sdk/android-studio/bin:$PATH" # Android studio
 
-export PKG_CONFIG_PATH="/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/lib64/pkgconfig:/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/share/pkgconfig"
 
 export GOOGLE_CLOUD_PROJECT="phonic-scheme-464714-k7"
 
