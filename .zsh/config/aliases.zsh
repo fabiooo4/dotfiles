@@ -39,3 +39,14 @@ alias hyprconf="nvim ~/.config/hypr/"
 
 # ESP-IDF
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
+
+# Nix
+alias nix-shell='nix-shell --run $SHELL'
+nix() {
+  if [[ $1 == "develop" ]]; then
+    shift
+    command nix develop -c $SHELL "$@"
+  else
+    command nix "$@"
+  fi
+}
