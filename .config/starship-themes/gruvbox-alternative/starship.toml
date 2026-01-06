@@ -10,6 +10,7 @@ $directory\
 [\\]](color_purple bold)\
 $git_branch\
 $git_status\
+$shlvl\
 $character\
 """
 
@@ -48,6 +49,12 @@ ahead = "⇡"
 behind = "⇣"
 diverged = "⇕"
 untracked = "…"
+
+[shlvl]
+disabled = false
+style = "color_blue"
+symbol = ""
+format = '[$symbol $shlvl ]($style)'
 
 [palettes.gruvbox_dark]
 color_fg0 = '#fbf1c7'
