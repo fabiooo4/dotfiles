@@ -33,10 +33,10 @@ eval "$(zoxide init --cmd cd zsh)" # zoxide a cd alternative
 eval "$(starship init zsh)" # starship prompt
 export BAT_THEME="gruvbox-dark"
 
+# pyenv config
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
-eval "$(pyenv virtualenv-init -)"
 
 # fzf config
 [ -f $HOME/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
