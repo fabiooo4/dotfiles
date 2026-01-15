@@ -6,8 +6,8 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Right hand Note Taking Copy"/>
-  <property name="lastSavePath" value="/home/fabio/dev/SIS/sis_uno"/>
-  <property name="lastOpenPath" value="/home/fabio/dev/SIS/sis_uno"/>
+  <property name="lastSavePath" value="/home/fabibo/Uni/TerzoAnno/PrimoSemestre/Fondamenti/Esercizi"/>
+  <property name="lastOpenPath" value="/home/fabibo/Uni/TerzoAnno/PrimoSemestre/Fondamenti/Esercizi"/>
   <property name="lastImagePath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Sistemi/Esercizi"/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
@@ -131,7 +131,7 @@
   <property name="stabilizerBuffersize" value="20"/>
   <property name="stabilizerSigma" value="0.5"/>
   <property name="stabilizerDeadzoneRadius" value="1.3"/>
-  <property name="stabilizerDrag" value="0.4"/>
+  <property name="stabilizerDrag" value="0.5"/>
   <property name="stabilizerMass" value="7"/>
   <property name="stabilizerCuspDetection" value="true"/>
   <property name="stabilizerFinalizeStroke" value="true"/>
@@ -225,7 +225,7 @@
     <attribute name="count" type="int" value="9"/>
   </data>
   <data name="tools">
-    <attribute name="current" type="string" value="pen"/>
+    <attribute name="current" type="string" value="selectRect"/>
     <data name="drawArrow">
       <attribute name="drawingType" type="string" value="default"/>
     </data>
@@ -273,7 +273,7 @@
       <attribute name="size" type="string" value="MEDIUM"/>
     </data>
     <data name="pen">
-      <attribute name="color" type="hex" value="ff000000"/>
+      <attribute name="color" type="hex" value="ffe0e0f4"/>
       <attribute name="drawingType" type="string" value="default"/>
       <attribute name="fill" type="int" value="0"/>
       <attribute name="fillAlpha" type="int" value="128"/>
@@ -310,7 +310,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="text">
-      <attribute name="color" type="hex" value="a6e3a1"/>
+      <attribute name="color" type="hex" value="e0e0f4"/>
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="verticalSpace">
