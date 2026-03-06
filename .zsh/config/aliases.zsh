@@ -35,7 +35,10 @@ if [ -f /etc/NIXOS ]; then
   nix() {
     if [[ $1 == "develop" ]]; then
       shift
-      command nix develop -c $SHELL "$@"
+      # command nix develop -c $SHELL "$@"
+
+      # Run as child to execute traps set in bash
+      command env PROMPT_COMMAND="unset PROMPT_COMMAND; $SHELL; exit" nix develop "$@"
     else
       command nix "$@"
     fi
@@ -52,14 +55,3 @@ alias hyprconf="nvim ~/.config/hypr/"
 
 # ESP-IDF
 alias get_idf='. $HOME/esp/esp-idf/export.sh'
-
-# Nix
-alias nix-shell='nix-shell --run $SHELL'
-nix() {
-  if [[ $1 == "develop" ]]; then
-    shift
-    command nix develop -c $SHELL "$@"
-  else
-    command nix "$@"
-  fi
-}

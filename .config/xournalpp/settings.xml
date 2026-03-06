@@ -6,17 +6,17 @@
   <property name="pressureMultiplier" value="1"/>
   <property name="zoomGesturesEnabled" value="true"/>
   <property name="selectedToolbar" value="Right hand Note Taking Copy"/>
-  <property name="lastSavePath" value="/home/fabibo/Uni/TerzoAnno/PrimoSemestre/Fondamenti/Esercizi"/>
-  <property name="lastOpenPath" value="/home/fabibo/Uni/TerzoAnno/PrimoSemestre/Fondamenti/Esercizi"/>
+  <property name="lastSavePath" value="/home/fabibo/Uni/TerzoAnno/PrimoSemestre/BasiDati/Esami"/>
+  <property name="lastOpenPath" value="/home/fabibo/Uni/TerzoAnno/PrimoSemestre/BasiDati/Esami"/>
   <property name="lastImagePath" value="/home/fabio/uni/SecondoAnno/PrimoSemestre/Sistemi/Esercizi"/>
   <property name="edgePanSpeed" value="20"/>
   <property name="edgePanMaxMult" value="5"/>
   <property name="zoomStep" value="10"/>
   <property name="zoomStepScroll" value="2"/>
   <property name="displayDpi" value="72"/>
-  <property name="mainWndWidth" value="1920"/>
-  <property name="mainWndHeight" value="1080"/>
-  <property name="maximized" value="true"/>
+  <property name="mainWndWidth" value="1536"/>
+  <property name="mainWndHeight" value="864"/>
+  <property name="maximized" value="false"/>
   <property name="showToolbar" value="true"/>
   <property name="showSidebar" value="false"/>
   <property name="sidebarWidth" value="50"/>
@@ -301,7 +301,7 @@
       <attribute name="drawingType" type="string" value="default"/>
     </data>
     <data name="selectRect">
-      <attribute name="drawingType" type="string" value="default"/>
+      <attribute name="drawingType" type="string" value="line"/>
     </data>
     <data name="selectRegion">
       <attribute name="drawingType" type="string" value="default"/>
