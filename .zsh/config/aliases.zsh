@@ -35,10 +35,13 @@ if [ -f /etc/NIXOS ]; then
   nix() {
     if [[ $1 == "develop" ]]; then
       shift
-      # command nix develop -c $SHELL "$@"
 
-      # Run as child to execute traps set in bash
-      command env PROMPT_COMMAND="unset PROMPT_COMMAND; $SHELL; exit" nix develop "$@"
+      # Use nom if installed
+      if command -v nom &> /dev/null; then
+        command env PROMPT_COMMAND="unset PROMPT_COMMAND; $SHELL; exit" nom develop "$@"
+      else
+        command env PROMPT_COMMAND="unset PROMPT_COMMAND; $SHELL; exit" nix develop "$@"
+      fi
     else
       command nix "$@"
     fi
