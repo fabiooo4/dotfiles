@@ -42,6 +42,8 @@ if [ -f /etc/NIXOS ]; then
       else
         command env PROMPT_COMMAND="unset PROMPT_COMMAND; $SHELL; exit" nix develop "$@"
       fi
+    elif [[ command -v nom &> /dev/null && $1 == "shell" ]]; then
+      command nom shell "$@"
     else
       command nix "$@"
     fi
