@@ -36,18 +36,16 @@ if [ -f /etc/NIXOS ]; then
     if [[ $1 == "develop" ]]; then
       shift
 
-      # Use nom if installed
-      if command -v nom &> /dev/null; then
-        command env PROMPT_COMMAND="unset PROMPT_COMMAND; $SHELL; exit" nom develop "$@"
-      else
-        command env PROMPT_COMMAND="unset PROMPT_COMMAND; $SHELL; exit" nix develop "$@"
-      fi
-    elif [[ $1 == "shell" ]]; then
-      shift 
+      local pc="unset PROMPT_COMMAND; unset shellHook; $SHELL; exit"
+      command env PROMPT_COMMAND="$pc" nix develop "$@"
 
-      if command -v nom &> /dev/null; then
-        command nom shell "$@"
-      fi
+      # nom runs the evaluation 2 times triggering shellHook twice
+      # # Use nom if installed
+      # if command -v nom &> /dev/null; then
+      #   command env PROMPT_COMMAND="$pc" nom develop "$@"
+      # else
+      #   command env PROMPT_COMMAND="$pc" nix develop "$@"
+      # fi
     else
       command nix "$@"
     fi
